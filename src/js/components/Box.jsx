@@ -6,7 +6,7 @@ const Box = () => {
   const [items, setItems] = useState([]);
 
   const addItem = () => {
-    if (inputValue.trim() !== "") {
+    if (inputValue !== "") {
       setItems([...items, inputValue]);
       setInputValue("");
     }
