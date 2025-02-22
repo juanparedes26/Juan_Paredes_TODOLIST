@@ -1,7 +1,7 @@
 .Target{
     background-color: beige;
     width: 700px;
-    height:1000px;
+    height:auto;
     display: flex;
 
     flex-direction: column;
@@ -24,5 +24,48 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  ul {
+    list-style: none;   
+    margin: 0;         
+    padding: 0;    
+     
+  }
+  li{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+  }
+  
+  .todo-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .delete {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:black;
+    font-weight: bold;
+  }
+  
+  .todo-item:hover .delete {
+    display: inline;
   }
 
